@@ -1,0 +1,32 @@
+[package]
+name = "oil_token"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+risc0-zkvm = "0.20"
+oil-tokenization-core = { path = "../core" }
+
+[[bin]]
+name = "init_oil_token"
+path = "src/bin/init_oil_token.rs"
+
+[[bin]]
+name = "init_tokenization"
+path = "src/bin/init_tokenization.rs"
+
+[[bin]]
+name = "init_comment"
+path = "src/bin/init_comment.rs"
+
+[[bin]]
+name = "init_overall"
+path = "src/bin/init_overall.rs"
+
+[[bin]]
+name = "state"
+path = "src/bin/state.rs"
+
+[[bin]]
+name = "verify"
+path = "src/bin/verify.rs" 
